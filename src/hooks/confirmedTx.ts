@@ -41,7 +41,7 @@ export function MonitorSwapEvents(monitoredAddresses: string[]): any {
       const block = await provider.getBlock(blockNumber);
       if (block && block.transactions.length > 0) {
         const blockCount = block?.transactions.length;
-        const newBlockMessage = `📦 New block: ${blockNumber} | ${blockCount} txns`;
+        const newBlockMessage = `📦 New block: <code>${blockNumber}</code> | ${blockCount} txns`;
         swapEventEmitter.emit("newblock", newBlockMessage);
         console.log("\t", newBlockMessage);
         for (const txHash of block.transactions) {

@@ -1,0 +1,32 @@
+{
+  "name": "launchb0xx",
+  "version": "1.0.0",
+  "description": "<!--\r **LaunchB0xx/LaunchB0xx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bn": "^1.0.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "events": "^3.3.0",
+    "https-proxy-agent": "^7.0.5",
+    "mongodb": "^6.9.0",
+    "path": "^0.12.7",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.6.3"
+  }
+}
